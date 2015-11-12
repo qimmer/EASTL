@@ -20,6 +20,7 @@ set(EASTL_LIBRARY EASTL)
 add_definitions(${EASTL_DEFINITIONS})
 include_directories(${EASTL_INCLUDE_DIR})
 
+add_definitions(-fPIC)
 
 # create library
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src LIB_SRCS)
